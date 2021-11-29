@@ -1,0 +1,17 @@
+sudo python3 example/test_multilabel_cnn.py    --metric acc     --dataset wiki80    --batch_size 160    --lr 0.1     --weight_decay 1e-5    --max_epoch 30     --max_length 128        --encoder pcnn
+
+2021-11-10 03:58:44,204 - root - INFO - Test set results:
+2021-11-10 03:58:44,204 - root - INFO - Accuracy: 0.88750
+2021-11-10 03:58:44,204 - root - INFO - Micro precision: 0.00000
+2021-11-10 03:58:44,204 - root - INFO - Micro recall: 0.00000
+2021-11-10 03:58:44,204 - root - INFO - Micro F1: 0.00000
+2021-11-10 03:58:44,205 - root - INFO - Macro precision: 0.00000
+2021-11-10 03:58:44,205 - root - INFO - Macro recall: 0.00000
+2021-11-10 03:58:44,205 - root - INFO - Macro F1: 0.00000
+2021-11-10 03:58:44,205 - root - INFO - AUC: 0.01267
+2021-11-10 03:58:44,205 - root - INFO - P@100: 0.03000
+2021-11-10 03:58:44,205 - root - INFO - P@200: 0.01500
+2021-11-10 03:58:44,205 - root - INFO - P@300: 0.01667
+2021-11-10 03:58:44,205 - root - INFO - Max micro F1: 0.02528
+2021-11-10 03:58:44,205 - root - INFO - | threshold: 0.01342
+
