@@ -68,7 +68,6 @@ if len(args.ckpt) == 0:
 ckpt = 'ckpt/{}.pth.tar'.format(args.ckpt)
 
 if args.dataset != 'none':
-    opennre.download(args.dataset, root_path=root_path)
     args.train_file = os.path.join(root_path, 'magyar', args.dataset, '{}_train.txt'.format(args.dataset))
     args.val_file = os.path.join(root_path, 'magyar', args.dataset, '{}_val.txt'.format(args.dataset))
     args.test_file = os.path.join(root_path, 'magyar', args.dataset, '{}_val.txt'.format(args.dataset))
