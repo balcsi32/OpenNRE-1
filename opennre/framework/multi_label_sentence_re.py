@@ -114,7 +114,7 @@ class MultiLabelSentenceRE(nn.Module):
                 args = data[1:]
                 logits = self.parallel_model(*args)
                 
-                label_vec = torch.zeros_like(logits).cuda()
+                label_vec = torch.zeros_like(logits)
                 label_vec[torch.arange(label_vec.size(0)), label] = 1
                 label_vec = label_vec[:, 1:]
                 logits = logits[:, 1:]
